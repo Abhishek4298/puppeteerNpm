@@ -11,3 +11,8 @@ npm i
 ```bash
 npm start
 ```
+
+### to UPLOAD the specific file.first choose the path on file filUpload.js and run
+```bash
+node filUpload.js
+```
