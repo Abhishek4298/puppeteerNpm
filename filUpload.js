@@ -17,6 +17,6 @@ const puppeteer = require('puppeteer');
 		page.click('.uppy-FileInput-btn')
 	])
 
-	await filechooser.accept(['./../npm_puppeteer_demo/public/images/screenshot-2020-8-5-14-35-53.png'])
+	await filechooser.accept(['./../puppeteerNpm/public/images/screenshot-2020-8-5-14-35-53.png'])
 	// await browser.close();
 })();
