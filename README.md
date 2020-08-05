@@ -8,7 +8,6 @@ npm i
 ```
 
 ### to run server 
-
 ```bash
 npm start
 ```
