@@ -11,16 +11,12 @@ const puppeteer = require('puppeteer');
 
 	await page.goto(url, { waitUntil: 'networkidle2' });
 
-	//To know the URL link.
-	page.on('console', msg => console.log('PAGE LOG :=>', msg.text()));
-	await page.evaluate(() => console.log(`The url is :::  ${location.href}`));
-
 	//File upload code
 	const [filechooser] = await Promise.all([
 		page.waitForFileChooser(),
 		page.click('.uppy-FileInput-btn')
 	])
 
-	await filechooser.accept(['/home/abhishek/Desktop/npm_puppeteer_demo/screenshot-2020-8-5-13-30-9.png'])
+	await filechooser.accept(['./../npm_puppeteer_demo/public/images/screenshot-2020-8-5-14-35-53.png'])
 	// await browser.close();
 })();

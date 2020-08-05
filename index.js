@@ -13,10 +13,10 @@ const { getFormattedTime } = require("./helper/index");
 	await page.goto(movieUrl, { waitUntil: 'networkidle2' });
 
 	// for taking screenshot
-	await page.screenshot({ path: 'screenshot-' + getFormattedTime() + '.png' });
+	await page.screenshot({ path: './../npm_puppeteer_demo/public/images/screenshot-' + getFormattedTime() + '.png' });
 
 	// for creating pdf file
-	await page.pdf({ path: 'new.pdf', format: 'A4' });
+	await page.pdf({ path: './../npm_puppeteer_demo/public/pdf/new.pdf', format: 'A4' });
 
 	//To know the URL link.
 	page.on('console', msg => console.log('PAGE LOG :=>', msg.text()));
